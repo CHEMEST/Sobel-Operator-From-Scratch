@@ -1,0 +1,40 @@
+# def apply_kernel(array, kernel):
+
+#     ### Manual Convoultion
+
+#     padded_array = np.pad(array, pad_width=1, mode='constant', constant_values=0)
+
+#     output_rows, output_cols = padded_array.shape[0] - kernel.shape[0] + 1, padded_array.shape[1] - kernel.shape[1] + 1
+#     output = np.zeros((output_rows, output_cols))
+
+#     for i in range(output_rows):
+#         for j in range(output_cols):
+#             # Extract the submatrix from padded_array
+#             submatrix = padded_A[i:i+K.shape[0], j:j+K.shape[1]]
+#             # Compute the dot product with the kernel
+#             output[i, j] = np.sum(submatrix * K)
+
+#     return
+
+# fig2 = plt.figure(4)
+# ax1, ax2, ax3, ax4 = fig2.add_subplot(221), fig2.add_subplot(222), fig2.add_subplot(223), fig2.add_subplot(224)
+# ax1.imshow(fresh_img)
+# ax2.imshow(x_edges)
+# ax3.imshow(y_edges)
+# ax4.imshow(result, cmap=plt.get_cmap('gray'))
+# plt.show()
+
+# for y in range(0, len(input_img)):
+#     for x in range(0,len(input_img[y])):
+#         print(diff)
+#         # if (diff > 254):
+#         #     result[y][x] = 0
+#         # else:
+#         #     result[y][x] = 1
+
+# for y in range(len(result)):
+#     for x in range(len(result[y])):
+#         if result[y][x] > 100:
+#             result[y][x] = 255
+#         else:
+#             result[y][x] = 0
